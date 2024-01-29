@@ -1,1 +1,13 @@
-<bm-side-bar-filter></bm-side-bar-filter>
+<div class="container catalog">
+    <div class="row">
+        <div class="col-md-3">
+            <bm-side-bar-filter [data]="catalogData" (filterCatalogData)="filterData($event)"></bm-side-bar-filter>
+        </div>
+        <div class="col-md-9">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" [(ngModel)]="filterTerm" />
+            </div>
+            <bm-catalog-cards [data]="catalogData" [filterTerm]="filterTerm"></bm-catalog-cards>
+        </div>
+    </div>
+</div>
