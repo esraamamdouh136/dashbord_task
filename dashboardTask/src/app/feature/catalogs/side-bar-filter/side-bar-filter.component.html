@@ -1,1 +1,31 @@
-<p>side-bar-filter works!</p>
+<div class="form-group filter">
+    <h6>SERVICES CATALOG</h6>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="filter.it"
+            (ngModelChange)="filterChange()" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            IT & Computer
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="filter.sales"
+            (ngModelChange)="filterChange()" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Sales & Marketing
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="filter.financial"
+            (ngModelChange)="filterChange()" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Financial Services
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="filter.business"
+            (ngModelChange)="filterChange()" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Finance and Business
+        </label>
+    </div>
+</div>

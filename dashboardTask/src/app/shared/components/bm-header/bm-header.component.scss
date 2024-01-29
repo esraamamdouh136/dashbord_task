@@ -1,0 +1,28 @@
+@import "../../../../assets/styles/variable.scss";
+
+header {
+  background-color: $dark-blue;
+  min-height: $hight-size-5;
+  margin: auto;
+
+  .content {
+    display: flex;
+    height: $hight-size-5;
+    align-items: center;
+  }
+
+  .icons {
+    min-width: $width-size-2;
+    max-width: $width-size-2;
+    min-height: $hight-size-2;
+    max-height: $hight-size-2;
+  }
+}
+
+@media screen and (max-width : 504px) {
+  .content {
+    display: block;
+    height: 6rem;
+    width: max-content;
+  }
+}

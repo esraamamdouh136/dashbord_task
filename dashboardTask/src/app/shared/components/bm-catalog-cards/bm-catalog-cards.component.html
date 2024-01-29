@@ -1,0 +1,18 @@
+<div class="catalog-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let catalog of data  | filter: filterTerm">
+                <div class="bm-card border-start border-4 p-3 m-3" [ngClass]="catalog.color">
+                    <img [src]="catalog.img" class="img d-block mx-auto">
+                    <div class="card-body text-center">
+                        <h5 class="title">{{catalog.title}}</h5>
+                        <span class="subtitle">{{catalog.subTitle}}</span>
+                        <p>
+                            {{catalog.discraption}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

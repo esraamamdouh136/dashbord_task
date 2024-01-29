@@ -1,0 +1,14 @@
+@import "../../../../assets/styles/variable.scss";
+
+.image-box {
+  background-color: $bg-white;
+  height: $hight-size-6;
+  width: $width-size-10;
+  border-radius: $border-radius-10;
+
+  img {
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+  }
+}

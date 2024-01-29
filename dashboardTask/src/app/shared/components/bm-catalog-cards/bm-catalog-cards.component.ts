@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IDataResponse } from '../../models/app.model';
 
 @Component({
-  selector: 'app-bm-catalog-cards',
+  selector: 'bm-catalog-cards',
   templateUrl: './bm-catalog-cards.component.html',
   styleUrls: ['./bm-catalog-cards.component.scss']
 })
 export class BmCatalogCardsComponent implements OnInit {
+  @Input() data!: IDataResponse[];
+  @Input() filterTerm: string = '';
 
   constructor() { }
 

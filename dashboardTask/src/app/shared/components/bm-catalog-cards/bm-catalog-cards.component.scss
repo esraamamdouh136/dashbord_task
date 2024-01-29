@@ -1,0 +1,15 @@
+@import "../../../../assets/styles/variable.scss";
+
+.bm-card {
+  background-color: $bg-white;
+  box-shadow: 10px 5px 10px 0px $light-shadow;
+  min-height: $hight-size-15;
+  min-width: $width-size-16;
+
+  .img {
+    max-width: $width-size-4;
+    min-width: $width-size-4;
+    min-height: $hight-size-4;
+    max-height: $hight-size-4;
+  }
+}
